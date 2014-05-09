@@ -2,6 +2,8 @@ console.log("working")
 
 
 //fighter class
+//for all classes, stats are 
+//[str, int, char, dext]
 var fighter = {
 	race: 'human',
 	gender: 'male',
@@ -131,7 +133,7 @@ function potBag () {
 		}
 	})
 }
-
+// adds health, int. and str. if potions are available
 function usePot () {
 	bag.items.potion = bag.items.potion.map(function(x,y){
 		if (x > 0 && y == 0) {
