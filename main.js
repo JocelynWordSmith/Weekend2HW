@@ -132,7 +132,7 @@ function potBag () {
 			return x+1;
 		}
 	})
-}
+};
 // adds health, int. and str. if potions are available
 function usePot () {
 	bag.items.potion = bag.items.potion.map(function(x,y){
@@ -149,10 +149,18 @@ function usePot () {
 			return x - 1;
 		}	
 	})
-}
+};
+function totalstats (chartype) {
+	var total = chartype.stats.reduce(function(a, b) {
+    return a + b;
+});
+};
 
-
-
+// function avghealth () {
+// 	var phealth = [fighter.health, mage.health, rogue.health, heavy.health,].reduce(function(a, b) {
+// 		return ((a + b)\4);
+// 	})
+// }
 
 
 
